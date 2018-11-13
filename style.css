@@ -1,3 +1,12 @@
 .opacity {
   opacity: 0.5;
 }
+
+.smicon {
+  height: 32px;
+  width: 32px;
+}
+
+.boxalogo {
+  font-size: 7rem;
+}
