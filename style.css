@@ -1,12 +1,70 @@
-.opacity {
-  opacity: 0.5;
+/* Additional styling */
+
+/* Logo links in navbar styling */
+
+.logolinks a {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
 }
 
-.smicon {
-  height: 32px;
-  width: 32px;
+.logolinks h5 {
+  margin: 5px auto;
+}
+
+.logolinks a::after {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  bottom: -10px;
+  content: "";
+  opacity: 0;
+  left: 26%;
+  position: absolute;
+  transition: 0.3s ease;
+  width: 50%;
+}
+
+.logolinks a:hover, .logolinks a:active {
+}
+
+.logolinks a:hover::after {
+  bottom: 0;
+  opacity: 1;
+  transition: 0.3s ease;
 }
 
 .boxalogo {
   font-size: 7rem;
+}
+
+/* Image carousel styling */
+
+.carousel-caption {
+  bottom: -5px;
+  padding: 5px 10px;
+}
+
+.carousel-caption h5 {
+  background-color: rgba(255,255,255,0.97)!important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Contact form styling */
+
+textarea {
+  resize: none;
+}
+
+/* Footer styling */
+
+.smicon {
+  height: 32px;
+  transition: 0.3s ease;
+  width: 32px;
+}
+
+.smicon:hover {
+  opacity: 0.65;
+  transition: 0.3s ease;
 }
